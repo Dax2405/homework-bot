@@ -7,13 +7,8 @@ import platform
 import subprocess
 
 
-def generate_document(national_news_item: NewsItem, international_news_item: NewsItem, editorial_news_item: NewsItem):
+def generate_document(national_news_item: NewsItem, international_news_item: NewsItem, editorial_news_item: NewsItem, universidad, materia, nombre, curso, profesor):
 
-    universidad = ""
-    materia = ""
-    nombre = ""
-    curso = ""
-    profesor = ""
     path = os.path.join(os.getcwd(), "data/images")
 
     document = Document()
