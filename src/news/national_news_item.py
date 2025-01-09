@@ -41,7 +41,8 @@ class NationalNewsItem(NewsItem):
             data = json.loads(script.string)
             categories = []
             for news_item in data["globals"]:
-                categories.append(news_item["main_category"]["name"])
+
+                categories.append(news_item["post_categories"][0]["name"])
 
             category_index = self._get_prefered_news_category(categories)
             self.title = data["globals"][category_index]["post_title"]
