@@ -29,24 +29,18 @@ git clone https://github.com/Dax2405/homework-bot.git
 
 ## Usage
 
-1. Configure the Google Generative AI API in `ai_processing.py`:
-    ```python
-    genai.configure(api_key="YOUR_API_KEY")
-    ```
-
-2.  Configure some variables in the `docs_generator.py` file. Open the file and edit the following variables with the appropriate information:
-
-```python
-# Edit these variables with the appropriate information
-universidad = "Your University Name"
-materia = "Your Subject"
-nombre = "Your Name"
-curso = "Your Course"
-profesor = "Your Professor's Name"
+1. Create a `.env` file at `src/`path  wich may contain:
+```sh
+NEWS_URL=https://www.domain.com/ultima-hora/
+NEWS_IMG_URL=https://www.domain.com/wp-content/uploads
+GEMINI_API_KEY="api-key"
+UNIVERSIDAD="Escuela"
+MATERIA="Análisis "
+NOMBRE="Nombre Apellido"
+CURSO="E4"
+PROFESOR="Eco. ...."
 ```
-
-
-3. Run the main script:
+2. Run the main script:
     ```sh
     python src/main.py
     ```
