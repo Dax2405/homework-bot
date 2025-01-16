@@ -30,6 +30,8 @@ git clone https://github.com/Dax2405/homework-bot.git
 ## Usage
 
 1. Create a `.env` file at `src/`path  wich may contain:
+    becarefull with copyright
+ 
 ```sh
 NEWS_URL=https://www.domain.com/ultima-hora/
 NEWS_IMG_URL=https://www.domain.com/wp-content/uploads
